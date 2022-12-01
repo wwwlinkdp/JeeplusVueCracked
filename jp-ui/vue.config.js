@@ -40,7 +40,7 @@ module.exports = {
     },
   devServer: {
     index: '/index.html', // 运行时，默认打开index页面
-    port: 3000,
+    port: 13000,
     proxy: {
       '/api': {
         target: process.env.VUE_APP_SERVER_URL,
