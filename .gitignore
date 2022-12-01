@@ -1,0 +1,6 @@
+/jp-console/.idea
+/jp-console/target
+/jp-console/jeeplus-module/target
+/jp-console/jeeplus-platform/target
+/jp-console/jeeplus-plugins/target
+/jp-console/*.iml
