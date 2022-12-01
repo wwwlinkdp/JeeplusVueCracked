@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jeeplus.test.activiti.mapper.TestActivitiLeaveMapper">
+
+	<sql id="testActivitiLeaveColumns">
+		a.id AS "id",
+		a.proc_ins_id AS "procInsId",
+		a.leave_type AS "leaveType",
+		a.start_time AS "startTime",
+		a.end_time AS "endTime",
+		a.reason AS "reason",
+		a.create_by AS "createBy.id",
+		a.create_date AS "createDate",
+		a.update_by AS "updateBy.id",
+		a.update_date AS "updateDate",
+		a.remarks AS "remarks",
+		a.del_flag AS "delFlag"
+	</sql>
+
+	<sql id="testActivitiLeaveJoins">
+
+		LEFT JOIN sys_user createBy ON createBy.id = a.create_by
+		LEFT JOIN sys_user updateBy ON updateBy.id = a.update_by
+	</sql>
+
+
+
+	<select id="findById" resultType="com.jeeplus.test.activiti.service.dto.TestActivitiLeaveDTO">
+		SELECT
+			<include refid="testActivitiLeaveColumns"/>
+		FROM test_activiti_leave a
+		<include refid="testActivitiLeaveJoins"/>
+		WHERE a.id = #{id} and a.del_flag = 0
+	</select>
+
+	<select id="findList" resultType="com.jeeplus.test.activiti.service.dto.TestActivitiLeaveDTO" >
+		SELECT
+			<include refid="testActivitiLeaveColumns"/>
+		FROM test_activiti_leave a
+		<include refid="testActivitiLeaveJoins"/>
+	    ${ew.customSqlSegment}
+	</select>
+
+</mapper>

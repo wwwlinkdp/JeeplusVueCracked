@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>jeeplus</artifactId>
+        <groupId>org.jeeplus</groupId>
+        <version>9.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>jeeplus-plugins</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>jeeplus-calendar</module>
+        <module>jeeplus-datascreen</module>
+        <module>jeeplus-datasource</module>
+        <module>jeeplus-echarts</module>
+        <module>jeeplus-flowable</module>
+        <module>jeeplus-form</module>
+        <module>jeeplus-mail</module>
+        <module>jeeplus-monitor</module>
+        <module>jeeplus-notify</module>
+        <module>jeeplus-oss</module>
+        <module>jeeplus-quartz</module>
+        <module>jeeplus-tools</module>
+        <module>jeeplus-ureport</module>
+        <module>jeeplus-wps</module>
+    </modules>
+
+
+</project>
