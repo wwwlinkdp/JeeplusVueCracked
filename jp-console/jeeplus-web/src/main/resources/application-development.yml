@@ -1,5 +1,5 @@
 server:
-  port: 8084
+  port: 18084
   servlet:
     context-path:
   tomcat:
@@ -47,7 +47,7 @@ spring:
       datasource:
         master:
           username: root
-          password: root
+          password:
           url: jdbc:mysql://127.0.0.1:3306/jeeplus-vue-base?useUnicode=true&characterEncoding=utf-8&useSSL=false&nullCatalogMeansCurrent=true&serverTimezone=Asia/Shanghai
           driver-class-name: com.mysql.cj.jdbc.Driver
 
@@ -85,7 +85,7 @@ spring:
     port: 6379
     expireTime: 3600000 #单位秒
     database: 1
-    password: 123456
+    password:
   mvc.servlet.load-on-startup: 1
   jmx:
     enabled: false
