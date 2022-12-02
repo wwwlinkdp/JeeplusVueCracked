@@ -50,11 +50,11 @@
         </dependency>
 
         <!---暂时限制-->
-        <dependency>
-            <groupId>org.jeeplus</groupId>
-            <artifactId>jeeplus-gencode-vue</artifactId>
-            <version>9.23</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.jeeplus</groupId>-->
+<!--            <artifactId>jeeplus-gencode-vue</artifactId>-->
+<!--            <version>9.23</version>-->
+<!--        </dependency>-->
 
         <dependency>
             <groupId>org.jeeplus</groupId>
