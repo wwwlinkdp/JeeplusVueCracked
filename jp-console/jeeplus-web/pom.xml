@@ -55,6 +55,13 @@
 <!--            <artifactId>jeeplus-gencode-vue</artifactId>-->
 <!--            <version>9.23</version>-->
 <!--        </dependency>-->
+        <dependency>
+            <groupId>org.jeeplus</groupId>
+            <artifactId>jeeplus-gencode-vue</artifactId>
+            <version>9.23</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/jeeplus-gencode-vue-9.23.jar</systemPath>
+        </dependency>
 
         <dependency>
             <groupId>org.jeeplus</groupId>
@@ -170,6 +177,13 @@
                 <directory>src/main/java</directory>
                 <includes>
                     <include>**/*.xml</include>
+                </includes>
+            </resource>
+            <resource>
+                <directory>lib</directory>
+                <targetPath>/BOOT-INF/lib/</targetPath>
+                <includes>
+                    <include>**/*.jar</include>
                 </includes>
             </resource>
         </resources>
